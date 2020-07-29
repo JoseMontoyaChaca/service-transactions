@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+ mongo-transactions:
+   image: "mongo"
+   container_name: "mongo-transactions"
+   ports:
+     - 27017:27017
+ service-transactions:
+   image: service-transactions
+   container_name : service-transactions
+   ports:
+     - 8076:8076
+   links:
+     - mongo-transactions

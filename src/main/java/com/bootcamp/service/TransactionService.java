@@ -20,7 +20,7 @@ public class TransactionService {
 		return repository.findAll().switchIfEmpty(Flux.empty());
 	}
 	
-	public Mono<Transaction> findById(final Integer id) {
+	public Mono<Transaction> findById(final String id) {
 		return repository.findById(id);
 	}
 	
@@ -37,7 +37,7 @@ public class TransactionService {
 	}
 	
 	
-	public Mono<Transaction> delete(final Integer id) {
+	public Mono<Transaction> delete(final String id) {
 		final Mono<Transaction> dbTransac = findById(id);
 		if (Objects.isNull(dbTransac)) {
 			return Mono.empty();

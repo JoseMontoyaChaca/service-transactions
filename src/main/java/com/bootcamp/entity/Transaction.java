@@ -9,7 +9,7 @@ import lombok.Data;
 @Document
 public class Transaction {
 	@Id
-	private Integer numberTransaction;
+	private String numberTransaction;
 	private String dniCustomer;
 	private double balance;
 	private TypeTransaction typeTransaction;
