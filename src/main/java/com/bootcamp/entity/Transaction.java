@@ -2,7 +2,6 @@ package com.bootcamp.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import lombok.Data;
 
 @Data
@@ -13,8 +12,8 @@ public class Transaction {
 	private String dniCustomer;
 	private double balance;
 	private TypeTransaction typeTransaction;
-	private Long  cardNumber;
-	private Long accountNumber;
-	private String dateTransaction; 
+	private String accountNumber;
+	private String dateTransaction;
+	
 
 }
