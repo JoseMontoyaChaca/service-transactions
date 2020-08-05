@@ -6,6 +6,6 @@ Ejecutar proyecto
 
 - mvn clean install
 
--docker-compose build
+- docker-compose build
 
--docker-compose up
+- docker-compose up
