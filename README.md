@@ -4,6 +4,8 @@ Una demostración de un servicio de transacciones  basada en el patrón de arqui
 
 Ejecutar proyecto
 
-mvn clean install 
-docker-compose build
-docker-compose up
+- mvn clean install
+
+-docker-compose build
+
+-docker-compose up
