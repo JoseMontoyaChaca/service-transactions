@@ -9,3 +9,9 @@ Ejecutar proyecto
 - docker-compose build
 
 - docker-compose up
+
+
+
+
+
+
